@@ -4,6 +4,8 @@
 
 [![npm][npm-img]][npm-url] [![node][node-img]][node-url]
 
+**当前包 forked from [vbenjs/vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock),因为`vbenjs/vite-plugin-mock`停止维护，我又需要使用其功能,所以复制了`vbenjs/vite-plugin-mock`进行 bug 修复，重新发布**
+
 提供本地和生产模拟服务。
 
 vite 的数据模拟插件，是基于 vite.js 开发的。 并同时支持本地环境和生产环境。 Connect 服务中间件在本地使用，mockjs 在生产环境中使用。
@@ -27,9 +29,9 @@ npm i  mockjs -S
 and
 
 ```bash
-yarn add vite-plugin-mock -D
+yarn add @meadmin-cn/vite-plugin-mock -D
 # or
-npm i vite-plugin-mock -D
+npm i @meadmin-cn/vite-plugin-mock -D
 ```
 
 ## 使用
@@ -45,7 +47,7 @@ npm i vite-plugin-mock -D
 ```ts
 import { UserConfigExport, ConfigEnv } from 'vite'
 
-import { viteMockServe } from 'vite-plugin-mock'
+import { viteMockServe } from '@meadmin-cn/vite-plugin-mock'
 import vue from '@vitejs/plugin-vue'
 
 export default ({ command }: ConfigEnv): UserConfigExport => {
@@ -175,7 +177,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
 ```ts
 // test.ts
 
-import { MockMethod } from 'vite-plugin-mock'
+import { MockMethod } from '@meadmin-cn/vite-plugin-mock'
 export default [
   {
     url: '/api/get',
@@ -245,7 +247,7 @@ export default [
 
 ```ts
 //  mockProdServer.ts
-import { createProdMockServer } from 'vite-plugin-mock/es/createProdMockServer'
+import { createProdMockServer } from '@meadmin-cn/vite-plugin-mock/es/createProdMockServer'
 
 // 逐一导入您的mock.ts文件
 // 如果使用vite.mock.config.ts，只需直接导入文件
@@ -260,7 +262,7 @@ export function setupProdMockServer() {
 配置 `vite-plugin-mock`
 
 ```ts
-import { viteMockServe } from 'vite-plugin-mock'
+import { viteMockServe } from '@meadmin-cn/vite-plugin-mock'
 
 import { UserConfigExport, ConfigEnv } from 'vite'
 
@@ -308,7 +310,7 @@ yarn serve
 
 ## 示例项目
 
-[Vben Admin](https://github.com/anncwb/vue-vben-admin)
+[meadmin template](https://github.com/meadmin-cn/meadmin-template)
 
 ## 注意事项
 

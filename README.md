@@ -4,6 +4,8 @@
 
 [![npm][npm-img]][npm-url] [![node][node-img]][node-url]
 
+**The package forked from [vbenjs/vite - plugin - mock] (https://github.com/vbenjs/vite-plugin-mock), because `vbenjs/vite - plugin - mock` stop maintenance, I needed to use its functionality again, so I copied 'vbenjs/vite-plugin-mock' to fix the bug and republish it **
+
 Provide local and prod mocks for vite.
 
 A mock plugin for vite, developed based on mockjs. And support the local environment and production environment at the same time. Connect service middleware is used locally, mockjs is used online
@@ -21,9 +23,9 @@ npm i  mockjs -S
 ```
 
 ```bash
-yarn add vite-plugin-mock -D
+yarn add @meadmin-cn/vite-plugin-mock -D
 # or
-npm i vite-plugin-mock -D
+npm i @meadmin-cn/vite-plugin-mock -D
 ```
 
 ### Example
@@ -61,7 +63,7 @@ Different from the production environment, you can view the network request reco
 ```ts
 import { UserConfigExport, ConfigEnv } from 'vite'
 
-import { viteMockServe } from 'vite-plugin-mock'
+import { viteMockServe } from '@meadmin-cn/vite-plugin-mock'
 import vue from '@vitejs/plugin-vue'
 
 export default ({ command }: ConfigEnv): UserConfigExport => {
@@ -192,7 +194,7 @@ Whether to display the request log on the console
 ```ts
 // test.ts
 
-import { MockMethod } from 'vite-plugin-mock'
+import { MockMethod } from '@meadmin-cn/vite-plugin-mock'
 export default [
   {
     url: '/api/get',
@@ -263,7 +265,7 @@ Create the `mockProdServer.ts` file
 ```ts
 //  mockProdServer.ts
 
-import { createProdMockServer } from 'vite-plugin-mock/es/createProdMockServer'
+import { createProdMockServer } from '@meadmin-cn/vite-plugin-mock/es/createProdMockServer'
 
 // Import your mock .ts files one by one
 // If you use vite.mock.config.ts, just import the file directly
@@ -278,7 +280,7 @@ export function setupProdMockServer() {
 Config `vite-plugin-mock`
 
 ```ts
-import { viteMockServe } from 'vite-plugin-mock'
+import { viteMockServe } from '@meadmin-cn/vite-plugin-mock'
 
 import { UserConfigExport, ConfigEnv } from 'vite'
 
@@ -303,7 +305,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
 
 ## Sample project
 
-[Vben Admin](https://github.com/anncwb/vue-vben-admin)
+[meadmin template](https://github.com/meadmin-cn/meadmin-template)
 
 ## Note
 

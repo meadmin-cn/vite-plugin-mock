@@ -1,7 +1,7 @@
 {
-  "name": "vite-plugin-mock",
-  "version": "2.9.6",
-  "description": "A mock plugin for vite",
+  "name": "@meadmin-cn/vite-plugin-mock",
+  "version": "2.9.7",
+  "description": "A mock plugin for vite forked from vbenjs/vite-plugin-mock",
   "main": "dist/index.js",
   "files": [
     "dist",
@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anncwb/vite-plugin-mock"
+    "url": "https://github.com/meadmin-cn/vite-plugin-mock"
   },
   "bugs": {
-    "url": "https://github.com/anncwb/vite-plugin-mock/issues"
+    "url": "https://github.com/meadmin-cn/vite-plugin-mock/issues"
   },
-  "homepage": "https://github.com/anncwb/vite-plugin-mock/tree/master/#readme",
+  "homepage": "https://github.com/meadmin-cn/vite-plugin-mock/tree/master/#readme",
   "dependencies": {
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/mockjs": "^1.0.4",
