@@ -6,6 +6,8 @@
 
 **当前包 forked from [vbenjs/vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock),因为`vbenjs/vite-plugin-mock`停止维护，我又需要使用其功能,所以复制了`vbenjs/vite-plugin-mock`进行 bug 修复，重新发布**
 
+**变更日志请参考[CHANGELOG.md](./CHANGELOG.md)**
+
 提供本地和生产模拟服务。
 
 vite 的数据模拟插件，是基于 vite.js 开发的。 并同时支持本地环境和生产环境。 Connect 服务中间件在本地使用，mockjs 在生产环境中使用。

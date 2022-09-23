@@ -4,7 +4,9 @@
 
 [![npm][npm-img]][npm-url] [![node][node-img]][node-url]
 
-**The package forked from [vbenjs/vite - plugin - mock] (https://github.com/vbenjs/vite-plugin-mock), because `vbenjs/vite - plugin - mock` stop maintenance, I needed to use its functionality again, so I copied 'vbenjs/vite-plugin-mock' to fix the bug and republish it**
+**The package forked from [vbenjs/vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock), because `vbenjs/vite-plugin-mock` stop maintenance, I needed to use its functionality again, so I copied 'vbenjs/vite-plugin-mock' to fix the bug and republish it**
+
+**For details about change logs, see [CHANGELOG.md](./CHANGELOG.md)**
 
 Provide local and prod mocks for vite.
 

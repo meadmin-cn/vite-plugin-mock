@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/meadmin-cn/vite-plugin-mock/issues"
   },
-  "homepage": "https://github.com/meadmin-cn/vite-plugin-mock/tree/master/#readme",
+  "homepage": "https://github.com/meadmin-cn/vite-plugin-mock/tree/main/#readme",
   "dependencies": {
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/mockjs": "^1.0.4",
