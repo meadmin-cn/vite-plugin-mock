@@ -59,10 +59,14 @@ function __XHR2ExpressReqWrapper__(handle) {
     let result = null
     if (typeof handle === 'function') {
       const { body, type, url, headers } = options
+      let b = body
+      try {
+        b = JSON.parse(body)
+      } catch {}
       result = handle({
         url,
         method: type,
-        body: JSON.parse(body),
+        body: b,
         query: __param2Obj__(url),
         headers,
       })

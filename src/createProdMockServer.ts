@@ -72,6 +72,7 @@ function __XHR2ExpressReqWrapper__(handle: (d: any) => any) {
         b = JSON.parse(body)
       } catch {}
       result = handle({
+        url,
         method: type,
         body: b,
         query: __param2Obj__(url),
